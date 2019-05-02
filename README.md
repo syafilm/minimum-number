@@ -1,5 +1,5 @@
 # minimum-number
-  Calculate the minimum number from users input form
+  Calculate the minimum number from user input form
 
    # Run locally
 

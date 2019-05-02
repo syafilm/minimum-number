@@ -1,5 +1,13 @@
+@import '~bootstrap/scss/bootstrap.scss';
+html, body{
+  height: 100%;
+  #root{
+    height: 100%;
+  }
+}
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -18,7 +26,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.commaplace{
+  span{
+    &:first-child{
+      &::before{
+        display: none;
+      }
+    }
+    &::before{
+      content: ',   ';
+    }
+  }
+}
 .App-link {
   color: #61dafb;
 }

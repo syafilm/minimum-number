@@ -156,7 +156,7 @@ class Body extends Component {
                 <span key={index}>
                   {parseInt(item) / parseInt(item)}
                   {' x '}
-                  {parseInt(item) * divider / Math.pow(10, index)}
+                  {'Rp'}{parseInt(item) * divider / Math.pow(10, index)}
                 </span>
               )
             ))}

@@ -52,6 +52,7 @@
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
+    "serve": "^11.0.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.3",
     "url-loader": "1.1.2",
@@ -61,10 +62,13 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
-    "start": "PORT=8000 node scripts/start.js",
-    "build": "node scripts/build.js",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
     "test": "node scripts/test.js",
-    "lint": "eslint --ext .js --ext .jsx src/components/*"
+    "lint": "eslint --ext .js --ext .jsx src/components/*",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
